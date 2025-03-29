@@ -1,9 +1,9 @@
 # SC5002_Assignment3
 This is the file for NTU SC5002 Lab Assignment 3 from Group 1 (LAM YUEN IN, WANG WEIQIAN, FANG XINQING)
 
-**Project Explanation:**
+**Project Explanation and Steps taken:**
  
-  In this project, our aim is to examine two models using the same dataset -- k-means model and MLP (Multi-Layer Perceptron) model. We first applied the K-means algorithm from _sklearn.cluster_ to test the data using different k values. This method is to see how data groups themselves naturally, and minimizing the within-cluster sum of squares. Elbow method was used to figure out the optimal number of clusters to have for our data, where we get the result that 3 is the optimal value for k. In addition, 
+  In this project, our aim is to examine two models using the same dataset -- k-means model and MLP (Multi-Layer Perceptron) model. We first applied the K-means algorithm from _sklearn.cluster_ to test the data using different k values. This method is to see how data groups themselves naturally, and minimizing the within-cluster sum of squares. Elbow method was used to figure out the optimal number of clusters to have for our data, where we get the result that 3 is the optimal value for k. In addition, silhouette score was applied to evaluate the clustering quality, where k=3 was found to have the highest silhouette score. As for the MLP (Multi-Layer Perceptron) model, we guided the network to learn the mapping from flower measurements to species labels. MLP performes an accuracy score of 96-97% from the 5-fold cross-validation method. Lastly, we used a confusion matrix to evaluate the performance of the classification model by comparing predicted labels with actual labels.
   
 **Dataset Explanation:**
   
