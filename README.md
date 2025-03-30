@@ -11,6 +11,10 @@ This is the file for NTU SC5002 Lab Assignment 3 from Group 1 (LAM YUEN IN, WANG
 
 **Insights**
 
-1. Ridge Regression Model prevented overfitting in our dataset.
-2. Linear Regression Model is more suitable for small datasets, where the relationship between variables is simple and few features comparing with the number of data provided.
-3. Ridge Regression Model is more suitable for dataset with a lot of independent variables, and overfitting is a concern (the model fits the training data too well but performs poorly on new data).
+1. The Elbow method is very efficient at determing the best value for k, where too few clusters (small k value) result in very high WCSS, but too many clusters (big k value) result in overfitting, implying that clusters may not generalize well and may represent noise rather than genuine patterns. Hence, the elbow point provides a good balance and generates the most appropriate result.
+
+2. By setting the number of clusters to 3, the algorithm produced clusters that largely correspond to the three actual species, demonstrating that even without supervision, the data’s natural structure can be effectively uncovered.
+
+3. A Multi-Layer Perceptron (MLP) classifier is used with three hidden layers of 64 neurons each and a maximum of 1024 training iterations. This setup ensures that the results stay the same across different train-test splits and cross-validation runs.
+
+4. MLPClassifier is a supervised learning method that predicts labels using training data, while K-Means is an unsupervised learning method that groups data based on patterns without predefined labels.
